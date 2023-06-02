@@ -45,7 +45,7 @@ jobs:
           fi
 
       - name: Checkout
-        uses: actions/checkout@v2.3.3
+        uses: actions/checkout@v3
         if: success() && (github.event_name != 'pull_request' || env.SEEKING_TESTERS == '1')
         with:
           submodules: 'recursive'
